@@ -1,10 +1,11 @@
 package com.parking.apiparking.services;
 
 import com.parking.apiparking.entities.Car;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Service
 public class ParkingService {
     //Utilizamos List para crear nuestra lista de carros.
     private List<Car> parkingLot;
@@ -24,7 +25,7 @@ public class ParkingService {
     public void addCar(Car car){
         this.parkingLot.add(car);
     }
-    
+
 }
 
 
